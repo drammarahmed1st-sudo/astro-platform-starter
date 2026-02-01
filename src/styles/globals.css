@@ -2,12 +2,12 @@
 
 @theme {
     --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --color-primary: #f67280;
-    --color-primary-content: #101828;
-    --color-complementary: #355c7d;
+    --color-primary: #d7b45a;
+    --color-primary-content: #120d05;
+    --color-complementary: #050505;
     --background-image-noise: linear-gradient(
             to bottom,
-            color-mix(in oklab, var(--color-gray-950) 0%, transparent),
+            color-mix(in oklab, var(--color-gray-950) 20%, transparent),
             color-mix(in oklab, var(--color-gray-950) 100%, transparent)
         ),
         url('/images/noise.png');
@@ -37,6 +37,23 @@
 }
 
 @layer components {
+    .glass-panel {
+        @apply rounded-3xl border border-white/10 bg-white/5 shadow-[0_0_60px_rgba(215,180,90,0.12)] backdrop-blur-xl;
+    }
+
+    .gold-divider {
+        @apply h-px w-full bg-gradient-to-l from-transparent via-primary/70 to-transparent;
+    }
+
+    .section-label {
+        @apply text-sm tracking-[0.4em] uppercase text-primary/80;
+    }
+
+    .glow-orb {
+        @apply absolute rounded-full blur-3xl opacity-50;
+        background: radial-gradient(circle, rgba(215, 180, 90, 0.35), rgba(5, 5, 5, 0));
+    }
+
     .markdown {
         > * {
             @apply my-6;

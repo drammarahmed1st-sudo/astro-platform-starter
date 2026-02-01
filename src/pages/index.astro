@@ -1,19 +1,139 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="منصّة العلوم الشرعية الذكية">
+    <section id="vision" class="relative py-10 sm:py-16">
+        <div class="glow-orb -right-24 top-4 h-64 w-64"></div>
+        <div class="glow-orb -left-24 top-32 h-72 w-72"></div>
+        <div class="glass-panel relative overflow-hidden px-8 py-12 sm:px-12 sm:py-16">
+            <div class="absolute inset-0 bg-gradient-to-bl from-white/5 via-transparent to-transparent"></div>
+            <div class="relative space-y-6">
+                <p class="section-label">منصّة ذكية حيّة</p>
+                <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+                    خلفية سوداء عميقة، ذهب يشير للقيمة، وزجاج يعكس عقلًا يفكّر.
+                </h1>
+                <p class="max-w-2xl text-lg text-white/80">
+                    ليست تجربة قراءة عادية. هذه منصّة تُبنى كقطعة فنية ذكية، تُنظّم العلم الشرعي وتجعله حاضرًا
+                    من اللحظة الأولى. لا حسابات، لا تسجيل، لا تشويش — حضور مباشر ومعرفة منظّمة تنبض بالهدوء.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#disciplines" class="btn btn-lg">ابدأ الدخول</a>
+                    <a href="#interaction" class="btn btn-lg border border-primary/40 bg-transparent text-primary hover:bg-primary/10">
+                        اكتشف التفاعل
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="concept" class="py-12 sm:py-20">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="space-y-6">
+                <p class="section-label">المفهوم</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">عقل رقمي يضيء بالذهب، يمسك بخيوط المعرفة.</h2>
+                <p class="text-white/75">
+                    التمرير ليس نزولًا فقط، بل انتقال مدروس بين العلوم. كل قسم يظهر كبوابة حيّة، يتوهّج عند المرور،
+                    ويعيد ترتيب الصفحة حوله لحظة الدخول. المنصّة لا تعرض محتوى… المنصّة تبني عقلًا.
+                </p>
+                <div class="gold-divider"></div>
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="glass-panel p-5">
+                        <h3 class="mb-2 text-lg font-semibold text-primary">شفافية زجاجية</h3>
+                        <p class="text-sm text-white/70">
+                            طبقات خفيفة، حركة هادئة، وإيماءات ناعمة تستجيب كأن الموقع يفهم نوايا المستخدم.
+                        </p>
+                    </div>
+                    <div class="glass-panel p-5">
+                        <h3 class="mb-2 text-lg font-semibold text-primary">مسار علمي منظّم</h3>
+                        <p class="text-sm text-white/70">
+                            الذكاء الاصطناعي هنا يشير، يرتّب، ويقترح المسار الصحيح دون فرضه أو إرباك.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-panel relative overflow-hidden p-8">
+                <div class="absolute right-6 top-6 h-24 w-24 rounded-full border border-primary/30"></div>
+                <div class="absolute bottom-6 left-6 h-32 w-32 rounded-full border border-white/10"></div>
+                <div class="space-y-6">
+                    <p class="text-sm text-primary/70">الصورة المركزية</p>
+                    <div class="flex items-center gap-4">
+                        <div class="h-16 w-16 rounded-2xl bg-gradient-to-br from-primary/70 to-primary/10"></div>
+                        <div>
+                            <h3 class="text-xl font-semibold">عقل رقمي متوهّج</h3>
+                            <p class="text-sm text-white/70">يربط النص بالفهم، والتراث بالنظام.</p>
+                        </div>
+                    </div>
+                    <p class="text-white/70">
+                        الذهب يظهر فقط عند النقاط المفصلية: مسألة، دليل، خلاف، ترجيح. كل شيء محسوب ليُشعِر
+                        المستخدم بأن خلف الواجهة عقلًا يحترم العلم ويتفاعل معه.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="disciplines" class="py-12 sm:py-20">
+        <div class="space-y-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                    <p class="section-label">العلوم الحيّة</p>
+                    <h2 class="text-3xl font-semibold sm:text-4xl">الأقسام تظهر ككيانات حيّة.</h2>
+                </div>
+                <p class="max-w-md text-white/70">
+                    عند المرور تتوهّج، وعند الدخول يعاد ترتيب الصفحة حولها. كل علم هو بوابة مستقلة ومسار فهم متدرّج.
+                </p>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {['فقه', 'حديث', 'تفسير', 'توحيد'].map((discipline) => (
+                    <article class="glass-panel group p-6 transition hover:-translate-y-1 hover:border-primary/40">
+                        <h3 class="text-2xl font-semibold text-primary">{discipline}</h3>
+                        <p class="mt-3 text-sm text-white/70">
+                            بوابة علمية مستقلة تعيد ترتيب المعرفة حولها وتفتح باب التعمّق الهادئ.
+                        </p>
+                        <div class="mt-6 h-px w-full bg-gradient-to-l from-primary/60 to-transparent transition group-hover:from-primary"></div>
+                        <p class="mt-4 text-xs uppercase tracking-[0.4em] text-white/40">بوابة حيّة</p>
+                    </article>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <section id="interaction" class="py-12 sm:py-20">
+        <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div class="glass-panel p-8">
+                <p class="section-label">التفاعل الذكي</p>
+                <h2 class="mt-4 text-3xl font-semibold">كل شيء مبني على الإيماءة.</h2>
+                <ul class="mt-6 space-y-4 text-white/75">
+                    <li>التمرير = انتقال علمي محسوب.</li>
+                    <li>النقرة = تعمّق واستكشاف المسائل.</li>
+                    <li>التوقف = شرح يظهر بهدوء دون تشويش.</li>
+                </ul>
+                <div class="mt-6 gold-divider"></div>
+                <p class="mt-6 text-sm text-white/70">
+                    المنصّة تعرف متى تصمت ومتى تُظهر التفاصيل — الذكاء الاصطناعي هنا يتفاعل، لا يتكلم كثيرًا.
+                </p>
+            </div>
+            <div class="space-y-6">
+                <div class="glass-panel p-6">
+                    <h3 class="text-xl font-semibold text-primary">تجربة فهم لا قراءة</h3>
+                    <p class="mt-3 text-sm text-white/70">
+                        النصوص تتحرّك بخفّة زجاجية، والعناوين تظهر تدريجيًا. الذهب يلمع فقط في اللحظات المفصلية.
+                    </p>
+                </div>
+                <div class="glass-panel p-6">
+                    <h3 class="text-xl font-semibold text-primary">الدخول مباشر</h3>
+                    <p class="mt-3 text-sm text-white/70">
+                        العلم حاضر من اللحظة الأولى — بلا تسجيل، بلا حسابات، وبلا خطوات إضافية تعوق الفهم.
+                    </p>
+                </div>
+                <div class="glass-panel p-6">
+                    <h3 class="text-xl font-semibold text-primary">منظّم لا مبعثر</h3>
+                    <p class="mt-3 text-sm text-white/70">
+                        منصة حديثة الشكل، راسخة الجوهر، تعيد تقديم العلوم الشرعية كبنية ذكية حيّة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
